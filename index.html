@@ -28,6 +28,7 @@
       #home-background-image
       {
         width: 100%;
+        height:100%;
       }
 
       .navbar
@@ -39,7 +40,7 @@
 
       #mynavigationbar a
       {
-        color:white;
+        color:grey;
         font-size:18px;
       }
 
@@ -52,6 +53,8 @@
       #home
       {
         position:relative;
+        height:400px;
+        margin-top:0px;
       }
 
       #home .container
@@ -73,10 +76,52 @@
         color:white;
       }
 
-      hr
+      .heading-line
       {
-        width:50%;
-        border:2px solid #eee;
+        width:40%;
+        border:2px solid #d98357;
+      }
+
+      #home .heading-line
+      {
+        border: 2px solid #eee;
+      }
+
+      .scroll-icon
+      {
+        margin-top:130px;
+      }
+
+      .scroll-icon a
+      {
+          font-size:30px;
+          color:white;
+          border:1px solid white;
+          padding:10px 10px 5px 12px;
+          border-radius:50%;
+      }
+
+      section
+      {
+        min-height:500px;
+        margin-top:50px;
+      }
+
+      .section-content
+      {
+        color: #777777;
+        font-size:20px;
+        padding:20px 40px 40px 40px;
+      }
+
+      .section-heading
+      {
+        font-size:45px;
+      }
+
+      .section-content-columns
+      {
+        margin-top:60px;
       }
 
     </style>
@@ -117,22 +162,72 @@
       <div class="container">
         <div class="row">
           <h1 class="text-center">Creative Tim</h1>
-          <hr>
+          <hr class="heading-line">
           <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
+          <div class="scroll-icon text-center">
+            <a href="#">
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center section-heading">About Creative Tim</h1>
+          <hr class="heading-line" />
+          <p class="section-content text-center">
+            Creative Tim is a startup that creates design tools that make the web development process faster and easier. We love the web and care deeply for how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="what-we-do">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center section-heading">What We do</h1>
+          <hr class="heading-line" />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 text-center section-content-columns">
+                <h2>Create UI Tools</h2>
+                <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
+              </div>
+
+              <div class="col-md-4 text-center section-content-columns">
+                <h2>Share Freebies</h2>
+                <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
+              </div>
+
+              <div class="col-md-4 text-center section-content-columns">
+                <h2>Power Hackathons</h2>
+                <p>We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. We like to help where we can, and our tools go hand in hand with startups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="team">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center section-heading">Team</h1>
+          <hr class="heading-line" />
+        </div>
+      </div>
     </section>
 
     <section id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center section-heading">Contact Us</h1>
+          <hr class="heading-line" />
+        </div>
+      </div>
     </section>
 
 
