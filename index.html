@@ -1,439 +1,594 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Creative Tim</title>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <!-- Bootstrap -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="assets/css/font-awesome.css" rel="stylesheet">
+      <!-- <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/> -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <style>
+      <title>Creative Tim</title>
 
-    html,body
-    {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
 
-      body
+      <style>
+
+      html,body
       {
-        font-family: 'Lato', sans-serif;
+          width: 100%;
+          height: 100%;
+          margin: 0px;
+          padding: 0px;
+          overflow-x: hidden;
       }
 
-      #home-background-image
+      html
       {
-        width: 100%;
-        height:100%;
+        padding-top:50px;
       }
 
-      .navbar
-      {
-        margin-bottom:0px;
-        background-color:transparent;
-        border:none;
-      }
+        body
+        {
+          font-family: 'Lato', sans-serif;
+        }
 
-      #mynavigationbar a
-      {
-        color:grey;
-        font-size:18px;
-      }
+        #home-background-image
+        {
+          width: 100%;
+          height:100%;
+        }
 
-      .navbar-default  a.navbar-brand
-      {
-        color:grey;
-        font-size:22px;
-      }
+        .navbar
+        {
+          margin-bottom:0px;
+          /*background-color:transparent;*/
+          border:none;
+        }
 
-      #home
-      {
-        position:relative;
-        height:400px;
-        margin-top:0px;
-      }
+        #mynavigationbar a
+        {
+          color:grey;
+          font-size:18px;
+        }
 
-      #home .container
-      {
-        position:absolute;
-        top:20%;
-        width:100%;
-      }
+        .navbar-default  a.navbar-brand
+        {
+          color:grey;
+          font-size:22px;
+        }
 
-      #home h1
-      {
-        color:white;
-        font-size:100px;
-        font-family: 'Lato', sans-serif;
-      }
+        #home
+        {
+          position:relative;
+          height:400px;
+          margin-top:0px;
+        }
 
-      #home h2
-      {
-        color:white;
-      }
+        #home .container
+        {
+          position:absolute;
+          top:20%;
+          width:100%;
+        }
 
-      .heading-line
-      {
-        width:40%;
-        border:2px solid #d98357;
-      }
-
-      #home .heading-line
-      {
-        border: 2px solid #eee;
-      }
-
-      .scroll-icon
-      {
-        margin-top:130px;
-      }
-
-      .scroll-icon a
-      {
-          font-size:30px;
+        #home h1
+        {
           color:white;
-          border:1px solid white;
-          padding:10px 10px 5px 12px;
-          border-radius:50%;
-      }
+          font-size:100px;
+          font-family: 'Lato', sans-serif;
+        }
 
-      section
-      {
-        min-height:500px;
-        margin-top:50px;
-      }
+        #home h2
+        {
+          color:white;
+        }
 
-      .section-content
-      {
-        color: #777777;
-        font-size:20px;
-        padding:20px 40px 40px 40px;
-      }
+        .heading-line
+        {
+          width:40%;
+          border:2px solid #d98357;
+        }
 
-      .section-heading
-      {
-        font-size:45px;
-      }
+        #home .heading-line
+        {
+          border: 2px solid #eee;
+        }
 
-      .about-image
-      {
-        margin-bottom:30px;
-      }
+        .scroll-icon
+        {
+          margin-top:130px;
+        }
 
-      #about img
-      {
-        margin-bottom:30px;
-      }
+        .scroll-icon a
+        {
+            font-size:30px;
+            color:white;
+            border:1px solid white;
+            padding:10px 10px 5px 12px;
+            border-radius:50%;
+        }
 
-      .about-icon
-      {
-        font-size: 80px;
-      }
+        section
+        {
+          min-height:500px;
+          margin-top:50px;
+        }
 
-      .team-img
-      {
-        width: 120px;
-        margin: 0 auto;
-        border: 2px solid #c5a47e;
-      }
-
-      .team-about
-      {
-        color:#777777;
-        padding:15px;
-      }
-
-      .team-heading
-      {
-        margin-top:30px;
-      }
-
-      .team-social-links a
-      {
+        .section-content
+        {
+          color: #777777;
           font-size:20px;
-          color: #bbbbbb;
-          margin-right:10px;
-      }
+          padding:20px 40px 40px 40px;
+        }
 
-      .team-social-links a:hover
-      {
-        color:#c5a47e;
-        text-decoration:none;
-      }
+        .section-heading
+        {
+          font-size:45px;
+        }
 
-      .team-horizontal-line
-      {
-        border-top:1px solid #ccc;
-      }
+        .about-image
+        {
+          margin-bottom:30px;
+        }
 
-      .common-section-area
-      {
-        margin-bottom:60px;
-      }
+        #about img
+        {
+          margin-bottom:30px;
+        }
 
-      #googlemap
-      {
-        height:400px;
-        width:100%;
-      }
+        .about-icon
+        {
+          font-size: 80px;
+        }
 
-      .team-social-links
-      {
-        margin-bottom:30px;
-      }
+        .team-img
+        {
+          width: 120px;
+          margin: 0 auto;
+          border: 2px solid #c5a47e;
+        }
 
-    </style>
+        .team-about
+        {
+          color:#777777;
+          padding:15px;
+        }
+
+        .team-heading
+        {
+          margin-top:30px;
+        }
+
+        .team-social-links a
+        {
+            font-size:20px;
+            color: #bbbbbb;
+            margin-right:10px;
+        }
+
+        .team-social-links a:hover
+        {
+          color:#c5a47e;
+          text-decoration:none;
+        }
+
+        .team-horizontal-line
+        {
+          border-top:1px solid #ccc;
+        }
+
+        .common-section-area
+        {
+          margin-bottom:60px;
+        }
+
+        #mygooglemap
+        {
+          height:400px;
+          width:100%;
+        }
+
+        .team-social-links
+        {
+          margin-bottom:30px;
+        }
+
+        #tools img:hover
+        {
+          opacity:0.6;
+        }
+
+        @media (max-width:500px)
+        {
+          #home h1
+          {
+            font-size:50px;
+          }
+
+          #home h2
+          {
+            font-size:20px;
+          }
+
+          .contact-description
+          {
+            margin-bottom:20px;
+          }
+
+        }
+
+        .my-rounded-button
+        {
+          border-radius:20px;
+        }
+
+        footer
+        {
+          background:rgba(30, 30, 30, 0.97);
+          margin-top:30px;
+          padding:20px;
+        }
+
+        .footer-links li , .footer-icons li
+        {
+          display: inline-block;
+
+        }
+
+        .footer-links li a , .footer-icons li a
+        {
+          color: #777777;
+          font-size: 16px;
+          padding: 10px;
+        }
+
+        .footer-links li a:hover , .footer-icons li a:hover
+        {
+          text-decoration:none;
+        }
+
+        footer .footer-center-content
+        {
+          color:#777777;
+        }
+
+        .white-content
+        {
+          color:white;
+        }
+
+      </style>
 
 
 
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Creative Tim</a>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">Creative Tim</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="mynavigationbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="#about">About</a></li>
+              <li><a href="#what-we-do">What we do</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#tools">Tools</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+
         </div>
 
-        <div class="collapse navbar-collapse" id="mynavigationbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">What we do</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+      </nav>
 
-      </div>
-
-    </nav>
-
-    <section id="home">
-      <img id="home-background-image" src="assets/images/home-background.jpg" >
-      <div class="container">
-        <div class="row">
-          <h1 class="text-center">Creative Tim</h1>
-          <hr class="heading-line">
-          <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
-          <div class="scroll-icon text-center">
-            <a href="#">
-              <span class="glyphicon glyphicon-chevron-down"></span>
-            </a>
+      <section id="home">
+        <img id="home-background-image" src="assets/images/home-background.jpg" >
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Creative Tim</h1>
+            <hr class="heading-line">
+            <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
+            <div class="scroll-icon text-center">
+              <a href="#about">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="common-section-area">
-            <h1 class="text-center section-heading">About Creative Tim</h1>
-            <hr class="heading-line" />
-            <p class="section-content text-center">
-              Creative Tim is a startup that creates design.
-                  tools that make the web development process faster and easier. We love the web and care deeply for how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
-            </p>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">About Creative Tim</h1>
+              <hr class="heading-line" />
+              <p class="section-content text-center">
+                Creative Tim is a startup that creates design.
+                    tools that make the web development process faster and easier. We love the web and care deeply for how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive ">
+              <img src="http://presentation.creative-tim.com/assets/img/pic6.jpg" class="img-responsive">
+
+            </div>
+
+            <div class="col-md-4">
+              <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg"  class="img-responsive">
+              <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive ">
+              <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive ">
+            </div>
+
+            <div class="col-md-4">
+              <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive ">
+              <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive ">
+
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="row">
-          <div class="col-md-4">
-            <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive ">
-            <img src="http://presentation.creative-tim.com/assets/img/pic6.jpg" class="img-responsive">
+      <section id="what-we-do">
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">What We do</h1>
+              <hr class="heading-line" />
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <span class="about-icon">
+                    <i class="fa fa-cog"></i>
+                  </span>
+                  <h2>Create UI Tools</h2>
+                  <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
+                </div>
 
-          </div>
+                <div class="col-md-4 text-center">
+                  <span class="about-icon">
+                    <i class="fa fa-gift"></i>
+                  </span>
+                  <h2>Share Freebies</h2>
+                  <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
+                </div>
 
-          <div class="col-md-4">
-            <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg"  class="img-responsive">
-            <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive ">
-            <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive ">
-          </div>
-
-          <div class="col-md-4">
-            <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive ">
-            <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive ">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="what-we-do">
-      <div class="container">
-        <div class="row">
-          <div class="common-section-area">
-            <h1 class="text-center section-heading">What We do</h1>
-            <hr class="heading-line" />
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 text-center">
-                <span class="about-icon">
-                  <i class="fa fa-cog"></i>
-                </span>
-                <h2>Create UI Tools</h2>
-                <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
-              </div>
-
-              <div class="col-md-4 text-center">
-                <span class="about-icon">
-                  <i class="fa fa-gift"></i>
-                </span>
-                <h2>Share Freebies</h2>
-                <p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p>
-              </div>
-
-              <div class="col-md-4 text-center">
-                <span class="about-icon">
-                  <i class="fa fa-rocket"></i>
-                </span>
-                <h2>Power Hackathons</h2>
-                <p>We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. We like to help where we can, and our tools go hand in hand with startups.</p>
+                <div class="col-md-4 text-center">
+                  <span class="about-icon">
+                    <i class="fa fa-rocket"></i>
+                  </span>
+                  <h2>Power Hackathons</h2>
+                  <p>We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. We like to help where we can, and our tools go hand in hand with startups.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="common-section-area">
-            <h1 class="text-center section-heading">Team</h1>
-            <hr class="heading-line" />
+      <section id="tools">
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">Tools</h1>
+              <hr class="heading-line" />
+              <h4 class="text-center">Check out these UI Tools, they will speed up your development process for sure!</h4>
+            </div>
           </div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-
-                <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
-                <h3 class="text-center team-heading">ELENA CONACEL</h3>
-                <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
-                <hr width="80%" class="team-horizontal-line">
-                <div class="team-social-links text-center">
-                  <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
-                  <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
-                </div>
-
-              </div>
-
-              <div class="col-md-3">
-                <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
-                <h3 class="text-center team-heading">ELENA CONACEL</h3>
-                <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
-                <hr width="80%" class="team-horizontal-line">
-                <div class="team-social-links text-center">
-                  <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
-                  <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
-                  <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> </a>
+          <div class="row">
+            <div class="container">
+              <div class="col-md-4">
+                <div class="tools-elements">
+                  <a href="http://google.com" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_md_thumbnail.jpg" class="img-responsive"></a>
+                  <h4 class="text-center">Just launched</h4>
+                  <h3 class="text-center">Material Dashboard</h3>
+                  <p class="text-center">Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design</p>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-default my-rounded-button">Live view</a>
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-3">
-                <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
-                <h3 class="text-center team-heading">ELENA CONACEL</h3>
-                <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
-                <hr width="80%" class="team-horizontal-line">
-                <div class="team-social-links text-center">
-                  <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
-                  <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
-                </div>
+              <div class="col-md-4">
               </div>
 
-              <div class="col-md-3">
-                <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
-                <h3 class="text-center team-heading">ELENA CONACEL</h3>
-                <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
-                <hr width="80%" class="team-horizontal-line">
-                <div class="team-social-links text-center">
-                  <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
-                  <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
-                </div>
+              <div class="col-md-4">
               </div>
+            </div>
+          </div>
 
+
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">Team</h1>
+              <hr class="heading-line" />
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+
+                  <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+                  <h3 class="text-center team-heading">ELENA CONACEL</h3>
+                  <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                  </div>
+
+                </div>
+
+                <div class="col-md-3">
+                  <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+                  <h3 class="text-center team-heading">ELENA CONACEL</h3>
+                  <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+                  <h3 class="text-center team-heading">ELENA CONACEL</h3>
+                  <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+                  <h3 class="text-center team-heading">ELENA CONACEL</h3>
+                  <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="common-section-area">
-            <h1 class="text-center section-heading">Contact Us</h1>
-            <hr class="heading-line" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="text-center">Where to meet ?</h3>
-            <h4 class="text-center">Bld. Mihail Kogalniceanu nr. 8
-Bucharest, Romania</h4>
-            <br>
-            <h3 class="text-center">Want to say hello ?</h3>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Contact me</a>
-            </a>
-          </div>
-
-          <div class="col-md-8">
-            <div id="googlemap">
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">Contact Us</h1>
+              <hr class="heading-line" />
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact-description">
+                <h3 class="text-center">Where to meet ?</h3>
+                <h4 class="text-center">Bld. Mihail Kogalniceanu nr. 8
+                      Bucharest, Romania</h4>
+                <br>
+                <h3 class="text-center">Want to say hello ?</h3>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Contact me</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div id="mygooglemap">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-links">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-center-content text-center">
+              &copy; Copyright <span class="white-content">Creative Tim</span> 2017
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-icons text-center">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
 
+      </footer>
 
+        <script>
+        function initMap() {
+          var uluru = {lat: 31.104814, lng: 77.173403};
+          var map = new google.maps.Map(document.getElementById('mygooglemap'), {
+            zoom: 10,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3MAPwtDFVmSAXUhuwQlhijLlLtHZgJR0&callback=initMap">
+      </script>
 
-      </div>
-    </section>
-
-
-    <!-- <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap">
-    </script> -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
-</html>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="assets/js/bootstrap.js"></script>
+    </body>
+  </html>
